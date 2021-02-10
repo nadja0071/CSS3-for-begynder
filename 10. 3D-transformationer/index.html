@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" type="text/css" href="reset.css"/>
+        <link rel="stylesheet" type="text/css" href="default.css"/>
+        <style type="text/css">
+            #box1
+            {
+                /* Position */
+                margin-top: 300px;
+                margin-left: auto;
+                margin-right: auto;
+
+                /* Størrelse og placering */
+                height: 200px;
+                width: 200px;
+                position: relative;
+
+                /* Farver */
+                background-color: #04B2D9;
+
+                /* Hjørner */
+                border: 5px solid #000;
+
+                -webkit-transition-property: -webkit-transform;
+                -webkit-transition-duration: 1s;
+            }
+
+            .effect1
+            {
+                -webkit-transform: rotateX(15deg) rotateY(180deg) translateY(20px);
+            }
+        </style>
+    </head>
+    <body>
+        <div id="box1"></div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+        <script>
+            var box;
+            
+            $(function()
+            {
+                box = $('#box1');
+                box[0].addEventListener('webkitTransitionEnd', transitionHasEnded);
+                box.click(function()
+                {
+                    box.addClass('effect1');
+                });
+            });
+
+            function transitionHasEnded()
+            {
+                box.removeClass('effect1');
+            }
+        </script>
+    </body>
+</html>

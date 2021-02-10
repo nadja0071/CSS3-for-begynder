@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" type="text/css" href="reset.css"/>
+        <link rel="stylesheet" type="text/css" href="default.css"/>
+        <style type="text/css">
+            @-webkit-keyframes 'udvid'
+            {
+                0%
+                {
+                    width: 200px;
+                }
+                100%
+                {
+                    width: 600px;
+                }
+            }
+            
+            #box1
+            {
+                /* Position */
+                margin-top: 300px;
+                margin-left: auto;
+                margin-right: auto;
+                
+                /* Størrelse og placering */
+                height: 200px;
+                width: 200px;
+                position: relative;
+
+                /* Farver */
+                background-color: #04B2D9;
+
+                /* Hjørner */
+                border: 5px solid #000;
+            }
+            
+            .effect1
+            {
+                -webkit-animation-name: 'udvid';
+                -webkit-animation-duration: 2s;
+                -webkit-animation-fill-mode: forwards;
+                -webkit-animation-iteration-count: 2;
+                -webkit-animation-direction: alternate;
+                -webkit-animation-delay: 1ms;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="box1"></div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+        <script>
+            var box = $('#box1');
+
+            $(function()
+            {
+                box.click(function()
+                {
+                    box.toggleClass('effect1');
+                });
+            });
+        </script>
+    </body>
+</html>

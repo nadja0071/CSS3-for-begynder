@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" type="text/css" href="reset.css"/>
+        <link rel="stylesheet" type="text/css" href="default.css"/>
+        <style type="text/css">
+            @-webkit-keyframes 'dans'
+            {
+                0%
+                {
+                    -webkit-transform: skew(-21deg, -6deg);
+                }
+                20%
+                {
+                    -webkit-transform: skew(20deg, 10deg);
+                }
+                40%
+                {
+                    -webkit-transform: skew(-24deg, -8deg);
+                }
+                60%
+                {
+                    -webkit-transform: skew(15deg, 9deg);
+                }
+                80%
+                {
+                    -webkit-transform: skew(-19deg, -16deg);
+                }
+                100%
+                {
+                    -webkit-transform: skew(21deg, 12deg);
+                }
+            }
+            
+            #box1
+            {
+                /* Position */
+                margin-top: 300px;
+                margin-left: auto;
+                margin-right: auto;
+                
+                /* Størrelse og placering */
+                height: 200px;
+                width: 200px;
+                position: relative;
+
+                /* Farver */
+                background-color: #04B2D9;
+
+                /* Hjørner */
+                border: 5px solid #000;
+                
+                text-align: center;
+                line-height: 200px;
+                font-family: arial, sans-serif;
+                font-size: 30px;
+                color: transparent;
+            }
+            
+            .effect1
+            {
+                -webkit-animation-name: 'dans';
+                -webkit-animation-duration: 1s;
+                -webkit-animation-iteration-count: infinite;
+                -webkit-animation-direction: alternate;
+                -webkit-animation-timing-function: linear;
+                color: #000 !important;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="box1">CSS3 boogie</div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+        <script>
+            var box = $('#box1');
+
+            $(function()
+            {
+                box[0].addEventListener('webkitAnimationEnd', animationHasEnded, false);
+                box.click(function()
+                {
+                    box.addClass('effect1');
+                });
+            });
+            
+            function animationHasEnded()
+            {
+                box.removeClass('effect1');
+            }
+        </script>
+    </body>
+</html>

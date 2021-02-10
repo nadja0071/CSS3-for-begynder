@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" type="text/css" href="reset.css"/>
+        <link rel="stylesheet" type="text/css" href="default.css"/>
+        <style type="text/css">
+            #box1
+            {
+                /* Position */
+                margin-top: 300px;
+                margin-left: auto;
+                margin-right: auto;
+                
+                /* Størrelse og placering */
+                height: 200px;
+                width: 200px;
+                position: relative;
+
+                /* Farver */
+                background-color: #04B2D9;
+
+                /* Hjørner */
+                border: 5px solid #000;
+                
+                -webkit-transition-property: transform;
+                -webkit-transition-duration: 500ms;
+                -webkit-transform-origin: left top;
+            }
+            
+            #box1:hover
+            {
+                -webkit-transform: translate(-50px, 70px) rotate(35deg) scale(3.5, 1.5);
+            }
+        </style>
+    </head>
+    <body>
+        <div id="box1"></div>
+    </body>
+</html>

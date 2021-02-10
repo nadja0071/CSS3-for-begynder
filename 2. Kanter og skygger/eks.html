@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" type="text/css" href="reset.css"/>
+        <link rel="stylesheet" type="text/css" href="default.css"/>
+        <style type="text/css">
+            div
+            {
+                /* Position */
+                margin: 50px;
+
+                /* Størrelse */
+                height: 200px;
+                width: 200px;
+
+                /* Farver */
+                background-color: #04B2D9;
+                border: 5px solid #000;
+
+                float: left;
+            }
+            #circle
+            {
+                border-radius: 100px;
+            }
+
+            #ellipse
+            {
+                width: 400px;
+                border-radius: 200px / 100px;
+            }
+
+            #pizza
+            {
+                border-radius: 25px;
+                border-top-right-radius: 200px;
+            }
+
+            #border
+            {
+                border-radius: 25px;
+                border-top-width: 15px;
+                border-bottom-width: 15px;
+            }
+
+            #pizza2
+            {
+                border-radius: 25px;
+                border-top-right-radius: 200px;
+                border-top-width: 15px;
+                border-right-width: 15px;
+            }
+            
+            #shadow-box
+            {
+                border-radius: 25px;
+                border-top-color: #FFF;
+                border-left-color: #FFF;
+            }
+            
+            #lemon
+            {
+                border-radius: 25px 120px;
+            }
+            #clear
+            {
+                width: 0;
+                height: 0;
+                border: 0;
+                margin: 0;
+                clear: both;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="pizza"></div>
+        <div id="circle"></div>
+        <div id="ellipse"></div>
+        <div id="lemon"></div>
+        <div id="clear"></div>
+        <div id="pizza2"></div>
+        <div id="border"></div>
+        <div id="shadow-box"></div>
+    </body>
+</html>

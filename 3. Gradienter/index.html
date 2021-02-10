@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" type="text/css" href="reset.css"/>
+        <link rel="stylesheet" type="text/css" href="default.css"/>
+        <style type="text/css">
+            div
+            {
+                /* Position */
+                margin: 50px;
+
+                /* Størrelse */
+                height: 200px;
+                width: 200px;
+
+                /* Farver */
+                background-color: #04B2D9;
+                border: 5px solid #000;
+
+                float: left;
+            }
+            #gradient1
+            {
+                background-image: -webkit-linear-gradient(yellow, green);
+            }
+            #gradient2
+            {
+                background-image: -webkit-linear-gradient(left, yellow, green);
+            }
+            #gradient3
+            {
+                background-image: -webkit-linear-gradient(135deg, yellow, green);
+            }
+            #gradient4
+            {
+                background-image: -webkit-linear-gradient(yellow, green 40%, green 60%, yellow);
+            }
+            #gradient5
+            {
+                background-image: -webkit-radial-gradient(yellow, green);
+            }
+            #gradient6
+            {
+                background-image: -webkit-radial-gradient(yellow 45%, green);
+            }
+            #gradient7
+            {
+                background-image: -webkit-radial-gradient(0% 100%, yellow 45%, green);
+            }
+            #gradient8
+            {
+                background-image: -webkit-radial-gradient(50% 130%, 300px 200px, yellow 45%, green);
+            }
+            #clear
+            {
+                width: 0;
+                height: 0;
+                border: 0;
+                margin: 0;
+                clear: both;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="gradient1"></div>
+        <div id="gradient2"></div>
+        <div id="gradient3"></div>
+        <div id="clear"></div>
+        <div id="gradient4"></div>
+        <div id="gradient5"></div>
+        <div id="gradient6"></div>
+        <div id="clear"></div>
+        <div id="gradient7"></div>
+        <div id="gradient8"></div>
+    </body>
+</html>
