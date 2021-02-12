@@ -1,31 +1,63 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title></title>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <link rel="stylesheet" type="text/css" href="reset.css"/>
-        <link rel="stylesheet" type="text/css" href="default.css"/>
-        <style type="text/css">
-            #box1
-            {
-                /* Position */
-                margin: 50px;
-                margin-left: auto;
-                margin-right: auto;
-                
-                /* Størrelse */
-                height: 200px;
-                width: 200px;
 
-                /* Farver */
-                background-color: #04B2D9;
+<head>
+    <title></title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" type="text/css" href="reset.css" />
+    <link rel="stylesheet" type="text/css" href="default.css" />
+    <style type="text/css">
+        div {
+            /* Position */
+            margin: 50px;
 
-                /* Hjørner */
-                border: 5px solid #000;
-            }
-        </style>
-    </head>
-    <body>
-        <div id="box1"></div>
-    </body>
+            /* Størrelse */
+            height: 200px;
+            width: 200px;
+
+            /* Farver */
+            background-color: #04B2D9;
+            border: 5px solid #000;
+
+            float: left;
+        }
+
+        #box1 {
+            /* Størrelse */
+            height: 200px;
+            width: 200px;
+
+            /* Farver */
+            background-color: #04B2D9;
+
+            /* Hjørner */
+            border: 5px solid #000;
+            border-radius: 20px 80px 20px 80px;
+            box-shadow: inset 5px 5px;
+        }
+
+        #box2 {
+            border: 5px solid #000;
+            background-color: pink;
+            border-top-left-radius: 25px;
+            border-top-right-radius: 25px;
+            border-bottom-left-radius: 100px;
+            border-bottom-right-radius: 100px;
+            box-shadow: 10px 10px;
+        }
+
+        #box3:hover {
+            border: 5px solid #000;
+            border-radius: 5px;
+            box-shadow: 70px 70px 20px -40px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="box1"></div>
+    <div id="box2"></div>
+    <div id="box3"></div>
+</body>
+
 </html>
