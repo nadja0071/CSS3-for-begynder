@@ -1,33 +1,40 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title></title>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <link rel="stylesheet" type="text/css" href="reset.css"/>
-        <link rel="stylesheet" type="text/css" href="default.css"/>
-        <style type="text/css">
-            #box1
-            {
-                /* Position */
-                margin: 50px;
-                margin-left: auto;
-                margin-right: auto;
-                
-                /* Størrelse */
-                height: 400px;
-                width: 400px;
 
-                /* Farver */
-                background-color: #04B2D9;
-                background-image: -webkit-linear-gradient(45deg, rgba(0, 255, 0, 0.5) 50%, green 50%, green), -webkit-linear-gradient(-45deg, red 50%, blue 50%, blue);
-                background-size: 50px 50px;
-                
-                /* Hjørner */
-                border: 5px solid #000;
-            }
-        </style>
-    </head>
-    <body>
-        <div id="box1"></div>
-    </body>
+<head>
+    <title></title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" type="text/css" href="reset.css" />
+    <link rel="stylesheet" type="text/css" href="default.css" />
+    <style type="text/css">
+        #box1 {
+            /* Position */
+            margin: 50px;
+            margin-left: auto;
+            margin-right: auto;
+
+            /* Størrelse */
+            height: 474px;
+            width: 633px;
+
+            /* Farver */
+            background-color: #04B2D9;
+            background-image: -webkit-linear-gradient(45deg, rgba(0, 255, 0, 0.5) 50%, green 50%, green), -webkit-linear-gradient(-45deg, red 50%, blue 50%, blue);
+            background-image: url('corner.png'), url('background1.jpg');
+            background-size: 200px 200px, 648px 484px;
+            background-repeat: no-repeat;
+            background-position: 20px 20px, 0 0;
+            background-origin: content-box, border-box;
+
+            /* Hjørner */
+            border: 5px solid rgba(255, 255, 255, 0.5);
+            border-radius: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="box1"></div>
+</body>
+
 </html>
