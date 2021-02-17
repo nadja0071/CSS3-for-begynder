@@ -1,69 +1,121 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title></title>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <link rel="stylesheet" type="text/css" href="reset.css"/>
-        <link rel="stylesheet" type="text/css" href="default.css"/>
-        <style type="text/css">
-            body
-            {
-                text-align: center;
-            }
-            
-            #linkBtn1
-            {
-                font-family: arial, sans-serif;
-                font-size: 40px;
-                text-decoration: none;
-                color: #000;
-            }
-            
-            #box1
-            {
-                /* Position */
-                margin-top: 300px;
-                margin-bottom: 50px;
-                margin-left: auto;
-                margin-right: auto;
-                
-                /* Størrelse og placering */
-                height: 200px;
-                width: 200px;
 
-                /* Farver */
-                background-color: #04B2D9;
+<head>
+    <title></title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" type="text/css" href="reset.css" />
+    <link rel="stylesheet" type="text/css" href="default.css" />
+    <style type="text/css">
+        /* box1 */
+        body {
+            text-align: center;
+        }
 
-                /* Hjørner */
-                border: 5px solid #000;
-                
-                -webkit-transition-property: width, background-color;
-                -webkit-transition-duration: 2s;
-            }
-            
-            #box1:hover
-            {
-                width: 600px;
-            }
-            
-            .effect1
-            {
-                background-color: #F26E22 !important;
-            }
-        </style>
-    </head>
-    <body>
-        <div id="box1"></div>
-        <a href="#" id="linkBtn1">Tilføj klasse</a>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-        <script>
-            $(function()
-            {
-                $('#linkBtn1').click(function()
-                {
-                    $('#box1').toggleClass('effect1');
-                });
+        #linkBtn1 {
+            font-family: arial, sans-serif;
+            font-size: 40px;
+            text-decoration: none;
+            color: #000;
+        }
+
+        #box1 {
+            /* Position */
+            margin-top: 200px;
+            margin-bottom: 50px;
+            margin-left: auto;
+            margin-right: auto;
+
+            /* Størrelse og placering */
+            height: 200px;
+            width: 200px;
+
+            /* Farver */
+            background-color: #FFF;
+
+            /* Hjørner */
+            border: 5px solid #000;
+
+            -webkit-transition-property: width, background-color;
+            -webkit-transition-duration: 2s;
+        }
+
+        #box1:hover {
+            width: 600px;
+        }
+
+        .effect1 {
+            background-color: #F26E22 !important;
+        }
+    </style>
+
+    <style type="text/css">
+        /* box2 */
+        body {
+            text-align: center;
+        }
+
+        #linkBtn2 {
+            font-family: arial, sans-serif;
+            font-size: 20px;
+            text-decoration: none;
+            color: #000;
+            padding-bottom: 200px;
+        }
+
+        #box2 {
+            /* Position */
+            margin-top: 100px;
+            margin-bottom: 50px;
+            margin-left: auto;
+            margin-right: auto;
+
+            /* Størrelse og placering */
+            height: 200px;
+            width: 200px;
+
+            /* Farver */
+            background-color: #04B2D9;
+
+            /* Hjørner */
+            border: 5px solid #000;
+
+            -webkit-transition-property: width, background-color;
+            -webkit-transition-duration: 500ms;
+        }
+
+        #box2:hover {
+            width: 1000px;
+        }
+
+        .effect2 {
+            background-color: pink !important;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="box1"></div>
+    <a href="#" id="linkBtn1">Tilføj klasse</a>
+    <div id="box2"></div>
+    <a href="#" id="linkBtn2">Tilføj klasse</a>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script>
+        $(function () {
+            $('#linkBtn1').click(function () {
+                $('#box1').toggleClass('effect1');
             });
-        </script>
-    </body>
+        });
+    </script>
+    <script>
+        $(function () {
+            $('#linkBtn2').click(function () {
+                $('#box2').toggleClass('effect2');
+            });
+        });
+    </script>
+
+</body>
+
 </html>

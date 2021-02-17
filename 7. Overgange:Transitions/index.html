@@ -1,38 +1,101 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title></title>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <link rel="stylesheet" type="text/css" href="reset.css"/>
-        <link rel="stylesheet" type="text/css" href="default.css"/>
-        <style type="text/css">
-            #box1
-            {
-                /* Position */
-                margin-top: 300px;
-                margin-left: auto;
-                margin-right: auto;
-                
-                /* Størrelse og placering */
-                height: 200px;
-                width: 200px;
 
-                /* Farver */
-                background-color: #04B2D9;
+<head>
+    <title></title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" type="text/css" href="reset.css" />
+    <link rel="stylesheet" type="text/css" href="default.css" />
 
-                /* Hjørner */
-                border: 5px solid #000;
-                
-                -webkit-transition: width 1s linear;
-            }
-            
-            #box1:hover
-            {
-                width: 600px;
-            }
-        </style>
-    </head>
-    <body>
-        <div id="box1"></div>
-    </body>
+    <style type="text/css">
+        /* box1-width */
+        #box1 {
+            /* Position */
+            margin-top: 100px;
+            margin-left: auto;
+            margin-right: auto;
+
+            /* Størrelse og placering */
+            height: 200px;
+            width: 200px;
+
+            /* Farver */
+            background-color: #04B2D9;
+
+            /* Hjørner */
+            border: 5px solid #000;
+
+            -webkit-transition-property: width;
+            -webkit-transition-duration: 1s;
+            -webkit-transition-timing-function: ease;
+        }
+
+        #box1:hover {
+            width: 600px;
+        }
+    </style>
+
+    <style type="text/css">
+        /* box2-height */
+        #box2 {
+            /* Position */
+            margin-top: 50px;
+            margin-left: auto;
+            margin-right: auto;
+
+            /* Størrelse og placering */
+            height: 200px;
+            width: 200px;
+
+            /* Farver */
+            background-color: pink;
+
+            /* Hjørner */
+            border: 10px solid #FFF;
+
+            -webkit-transition-property: height;
+            -webkit-transition-duration: 1s;
+            -webkit-transition-timing-function: cubic-bezier(.13, 1.5, .75, 1.52);
+        }
+
+        #box2:hover {
+            height: 600px;
+        }
+    </style>
+
+    <style type="text/css">
+        /* box3-border */
+        #box3 {
+            /* Position */
+            margin-top: 50px;
+            margin-bottom: 100px;
+            margin-left: auto;
+            margin-right: auto;
+
+            /* Størrelse og placering */
+            height: 200px;
+            width: 200px;
+
+            /* Farver */
+            background-image: -webkit-linear-gradient(yellow, green, #F0F);
+
+            /* Hjørner */
+            border: 20px solid rgb(19, 16, 211);
+
+            -webkit-transition: border 1s linear;
+        }
+
+        #box3:hover {
+            border: 600px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="box1"></div>
+    <div id="box2"></div>
+    <div id="box3"></div>
+</body>
+
 </html>
